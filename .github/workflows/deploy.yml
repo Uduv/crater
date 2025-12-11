@@ -38,6 +38,7 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+            **/vendor/** # Un-comment this if you install new PHP packages! Keeping it excluded makes deploy 10x faster.
             **/tests/**
             .env.example
             .editorconfig
