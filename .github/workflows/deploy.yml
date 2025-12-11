@@ -33,7 +33,7 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/ # Adjust if your app is in a subdirectory like /domains/uduv.mortauxrats.fr/public_html/
+          server-dir: ./ # Deploy to the root of the FTP user (which seems to be public_html already)
           exclude: |
             **/.git*
             **/.git*/**
