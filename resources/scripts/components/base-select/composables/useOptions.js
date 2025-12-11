@@ -108,6 +108,9 @@ export default function useOptions(props, context, dep) {
       case 'multiple':
       case 'tags':
         return !isNullish(iv.value) && iv.value.length > 0
+
+      default:
+        return false
     }
   })
 
@@ -148,6 +151,9 @@ export default function useOptions(props, context, dep) {
       case 'multiple':
       case 'tags':
         return []
+
+      default:
+        return null
     }
   })
 
